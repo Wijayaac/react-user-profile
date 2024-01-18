@@ -1,13 +1,17 @@
+import ProfileBadge from "./components/ProfileBadge";
+import TopActionButton from "./components/TopActionButton";
+
 function App() {
   return (
     <>
-      <div className='w-full'>
-        <h1 className='text-base-100 text-xl'>Hello</h1>
-        <div className='avatar'>
-          <div className='w-full'>
+      <div className='w-full max-w-[375px] mx-auto relative'>
+        <TopActionButton />
+        <div className='avatar w-full'>
+          <div className='img-container pt-[66%] min-h-[420px]'>
             <img src='https://daisyui.com/images/stock/photo-1534528741775-53994a69daeb.jpg' />
           </div>
         </div>
+        <ProfileBadge />
       </div>
     </>
   );
